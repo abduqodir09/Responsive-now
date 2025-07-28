@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 90px;
+}
+
+.child{
+    width: 300px;
+    height: 400px;
+    background-color: red;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav{
+    gap: 90px;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 1110px){
+    .child{
+        width: 250px;
+        height: 350px;
+        background-color: blue;
+    }
+}
+
+@media (max-width: 965px){
+    .child{
+        width: 190px;
+        height: 290px;
+        background-color: aqua;
+    }
+
+    .box{
+        gap: 80px;
+    }
+}
+
+@media (max-width: 785px){
+    .child{
+        width: 170px;
+        height: 270px;
+        background-color: cadetblue;
+    }
+
+    .box{
+        gap: 30px;
+    }
+}
+
+@media (max-width: 584px){
+    .child{
+        width: 160px;
+        height: 260px;
+        background-color: coral;
+    }
+
+    .box{
+        gap: 10px;
+    }
+}
+
+@media (max-width: 515px){
+    .child{
+        width: 150px;
+        height: 250px;
+        background-color: cornflowerblue;
+    }
+
+    .box{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 423px){
+    .child{
+        width: 150px;
+        height: 250px;
+        background-color: darkmagenta;
+        
+    }
+
+    .box{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 370px){
+    .box{
+        display: flex;
+        flex-direction: column;
+    }
+}
+</style>
+<body>
+    <div class="box">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+</body>
+</html>
